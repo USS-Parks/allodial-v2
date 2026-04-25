@@ -261,7 +261,7 @@ p {
   position: absolute;
   inset: 0;
   background-color: var(--parchment-dark);
-  background-image: url('../images/hero-castle.jpg');
+  background-image: url('../images/hero-castle.png');
   background-size: cover;
   background-position: center 40%;
 }
