@@ -1108,10 +1108,6 @@ p {
   color: var(--frost);
 }
 
-.footer__mission-vision {
-  margin-bottom: var(--space-md);
-}
-
 .mission-vision-card {
   display: flex;
   gap: 0;
