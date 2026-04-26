@@ -766,6 +766,169 @@ p {
 
 
 /* ============================================================
+   DESIGN PARTNERS / PILOT PROGRAM
+   ============================================================ */
+
+.pilot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.pilot-card {
+  padding: var(--space-md);
+  background-color: var(--basalt);
+  border: 1px solid var(--slate);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.pilot-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--gold-dim);
+}
+
+.pilot-card__number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.pilot-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.pilot-card p {
+  font-size: 0.92rem;
+  color: var(--mist);
+  line-height: 1.6;
+}
+
+.pilot-benefits {
+  margin-bottom: var(--space-lg);
+}
+
+.pilot-benefits h3 {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  color: var(--gold);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.benefit-item {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  padding: var(--space-sm);
+  background-color: var(--granite);
+  border: 1px solid var(--slate);
+  border-radius: var(--border-radius);
+}
+
+.benefit-icon {
+  color: var(--gold);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.benefit-item strong {
+  color: var(--frost);
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.benefit-item p {
+  font-size: 0.85rem;
+  color: var(--mist);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.pilot-status {
+  text-align: center;
+  padding: var(--space-md);
+  background-color: var(--granite);
+  border: 1px solid var(--gold-dim);
+  border-radius: var(--border-radius);
+}
+
+.pilot-status p {
+  margin: 0 auto var(--space-xs);
+  max-width: 650px;
+}
+
+
+/* ============================================================
+   COMPLIANCE & SECURITY
+   ============================================================ */
+
+.compliance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.compliance-card {
+  padding: var(--space-md);
+  background-color: var(--basalt);
+  border: 1px solid var(--slate);
+  border-radius: var(--border-radius);
+}
+
+.compliance-card h3 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.2rem;
+}
+
+.compliance-card .card__list li {
+  color: var(--cloud);
+  font-size: 0.9rem;
+}
+
+.compliance-note {
+  text-align: center;
+  padding: var(--space-md);
+  background-color: var(--granite);
+  border: 1px solid var(--slate);
+  border-radius: var(--border-radius);
+}
+
+.compliance-note p {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 0.9rem;
+  color: var(--mist);
+  line-height: 1.7;
+}
+
+.compliance-note strong {
+  color: var(--gold);
+}
+
+
+/* ============================================================
    CTA SECTION
    ============================================================ */
 
@@ -784,12 +947,15 @@ p {
 }
 
 .cta-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cta-form__row {
   display: flex;
   gap: var(--space-xs);
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 .cta-form input[type="email"] {
@@ -813,6 +979,70 @@ p {
 
 .cta-form input[type="email"]::placeholder {
   color: var(--storm);
+}
+
+.cta-form__consent {
+  margin-top: var(--space-sm);
+  text-align: left;
+}
+
+.consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--storm);
+  line-height: 1.5;
+}
+
+.consent-label input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border: 1.5px solid var(--slate);
+  border-radius: 3px;
+  background-color: var(--basalt);
+  cursor: pointer;
+  margin-top: 1px;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.consent-label input[type="checkbox"]:checked {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%2314171C' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2.5-2.5a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.consent-label input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+}
+
+.consent-label span {
+  color: var(--storm);
+}
+
+.cta-form__privacy {
+  font-size: 0.75rem;
+  color: var(--storm);
+  margin-top: var(--space-sm);
+  max-width: 500px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.cta-form__privacy a {
+  color: var(--gold-dim);
+}
+
+.cta-form__privacy a:hover {
+  color: var(--gold);
 }
 
 
@@ -936,6 +1166,20 @@ p {
   .spec-label {
     min-width: 90px;
   }
+
+  .pilot-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto var(--space-lg);
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compliance-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -1004,13 +1248,25 @@ p {
     padding: var(--space-md) var(--space-sm);
   }
 
-  .cta-form {
+  .cta-form__row {
     flex-direction: column;
     align-items: stretch;
   }
 
   .cta-form input[type="email"] {
     min-width: auto;
+  }
+
+  .pilot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compliance-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero__bg {

@@ -86,6 +86,17 @@
 
       if (!email) return;
 
+      // Verify consent checkbox
+      var consentBox = ctaForm.querySelector('input[name="consent"]');
+      if (consentBox && !consentBox.checked) {
+        consentBox.focus();
+        consentBox.parentElement.style.color = 'var(--gold)';
+        setTimeout(function () {
+          consentBox.parentElement.style.color = '';
+        }, 2000);
+        return;
+      }
+
       // Visual feedback
       var originalText = submitBtn.textContent;
       submitBtn.textContent = 'Added';

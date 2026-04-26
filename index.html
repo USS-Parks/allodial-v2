@@ -39,6 +39,7 @@
         <li><a href="#features">Capabilities</a></li>
         <li><a href="#hardware">Hardware</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pilot">Pilot Program</a></li>
         <li><a href="#contact" class="btn btn--primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Get Early Access</a></li>
       </ul>
 
@@ -430,9 +431,196 @@
 
 
   <!-- ============================================================
+       DESIGN PARTNERS / PILOT PROGRAM
+       ============================================================ -->
+  <section class="section" id="pilot">
+    <div class="container">
+      <div class="features__header fade-up">
+        <p class="text-mono">Design Partner Program</p>
+        <h2>Build It With Us</h2>
+        <p>
+          We're not launching from a stage. We're launching from server rooms,
+          tribal offices, municipal IT closets, and operations centers where the
+          work actually happens. Our first deployments are co-developed with a
+          small cohort of organizations who need this solved now and are willing
+          to shape the product alongside us.
+        </p>
+      </div>
+
+      <div class="pilot-grid fade-up">
+
+        <div class="pilot-card">
+          <div class="pilot-card__number">1</div>
+          <h3>Discovery &amp; Scoping</h3>
+          <p>
+            A 2-week engagement where we map your operational workflows,
+            identify the highest-value automation targets, and determine which
+            hardware tier fits your environment. No generic demos. We sit with
+            your people, learn how they actually work, and scope a deployment
+            that addresses real pain points.
+          </p>
+        </div>
+
+        <div class="pilot-card">
+          <div class="pilot-card__number">2</div>
+          <h3>90-Day Pilot Deployment</h3>
+          <p>
+            Hardware ships pre-configured for your site. Your team gets hands-on
+            access to the ontology engine, model orchestrator, and integration
+            layer from day one. We provide direct engineering support throughout
+            the pilot, not a help desk ticket queue. Your feedback shapes the
+            product roadmap in real time.
+          </p>
+        </div>
+
+        <div class="pilot-card">
+          <div class="pilot-card__number">3</div>
+          <h3>Measured Outcomes</h3>
+          <p>
+            Every pilot has a defined success metric agreed upon before hardware
+            arrives. Time saved on document generation. Reduction in manual data
+            entry hours. Query response latency against your institutional
+            knowledge base. If we don't hit the number, we haven't earned the
+            contract.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pilot-benefits fade-up">
+        <h3>What Design Partners Get</h3>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <span class="benefit-icon">&rsaquo;</span>
+            <div>
+              <strong>Priority hardware allocation</strong>
+              <p>First production units, configured and shipped ahead of general availability.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">&rsaquo;</span>
+            <div>
+              <strong>Direct engineering access</strong>
+              <p>Weekly syncs with the build team. Your feature requests go straight into the sprint backlog, not a suggestion box.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">&rsaquo;</span>
+            <div>
+              <strong>Founder-tier pricing</strong>
+              <p>Locked-in pricing that reflects the risk you're taking on us early. This rate doesn't come back once general availability opens.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">&rsaquo;</span>
+            <div>
+              <strong>Product direction influence</strong>
+              <p>Your operational reality drives what we build next. Integration priorities, model selection, ontology tooling, workflow templates. You're not a customer yet. You're a co-designer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pilot-status fade-up">
+        <p class="text-mono">Current Status</p>
+        <p>
+          We are in active conversations with organizations across tribal governance,
+          rural municipal operations, and regional healthcare administration.
+          Several letters of intent are under review. We don't name names before
+          ink dries, but if your organization operates in environments where data
+          sovereignty isn't optional and cloud dependency is a liability, you're
+          the profile we built this for.
+        </p>
+        <a href="#contact" class="btn btn--primary" style="margin-top: var(--space-sm);">Apply for the Design Partner Cohort</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       COMPLIANCE & SECURITY
+       ============================================================ -->
+  <section class="section section--alt" id="security">
+    <div class="container">
+      <div class="features__header fade-up">
+        <p class="text-mono">Compliance &amp; Security</p>
+        <h2>Trust Architecture, Not Trust Promises</h2>
+        <p>
+          Security claims are cheap. Architectural decisions are what actually
+          protect your data. Here's how Indomit is built and where we are on
+          the compliance roadmap.
+        </p>
+      </div>
+
+      <div class="compliance-grid fade-up">
+
+        <div class="compliance-card">
+          <h3>Data Handling</h3>
+          <ul class="card__list">
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>Zero telemetry</strong> &mdash; no usage data, no model inputs, no query logs are transmitted off-device. Ever. There is no analytics endpoint to disable because we never built one.</span>
+            </li>
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>Local-only processing</strong> &mdash; all inference, fine-tuning, and ontology operations execute entirely on your hardware. No API calls to external model providers.</span>
+            </li>
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>ZFS encryption at rest</strong> &mdash; all storage volumes use native ZFS encryption with customer-managed keys. We do not hold, escrow, or have access to your encryption keys.</span>
+            </li>
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>Decommission protocol</strong> &mdash; documented secure wipe procedures for end-of-life. Cryptographic erasure via key destruction, followed by full-disk overwrite verification.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="compliance-card">
+          <h3>Compliance Roadmap</h3>
+          <ul class="card__list">
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>SOC 2 Type I</strong> &mdash; preparation underway. Target completion: Q4 2026. We are documenting controls, access policies, and change management procedures against the Trust Services Criteria framework now.</span>
+            </li>
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>SOC 2 Type II</strong> &mdash; targeted for 2027 following 6-month observation window post-Type I certification.</span>
+            </li>
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>HIPAA technical safeguards</strong> &mdash; Indomit's architecture satisfies the technical safeguard requirements for covered entities. BAA availability planned for Q1 2027 concurrent with SOC 2 Type I completion.</span>
+            </li>
+            <li>
+              <span class="chevron">&rsaquo;</span>
+              <span><strong>CJIS-compatible configuration</strong> &mdash; Network-Isolated Mode and hardware kill switch satisfy physical and logical access control requirements. Formal CJIS Security Policy compliance documentation in development.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="compliance-note fade-up">
+        <p>
+          <strong>A note on honesty:</strong> We are a pre-revenue company. We do not
+          yet hold SOC 2 certification, and we won't claim compliance we haven't earned.
+          What we can tell you is that every architectural decision from day one has been
+          made with these frameworks in mind, and the roadmap above reflects real work in
+          progress, not marketing aspirations on a slide deck. If your procurement process
+          requires specific certifications, we'll tell you exactly where we are and what
+          the timeline looks like.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
        CTA / CONTACT
        ============================================================ -->
-  <section class="section section--alt" id="contact">
+  <section class="section section--dark" id="contact">
     <div class="container">
       <div class="cta-section fade-up">
         <p class="text-mono">Early Access</p>
@@ -443,11 +631,23 @@
           renting it from someone else, get on the list.
         </p>
         <form class="cta-form" action="#" method="POST" id="ctaForm">
-          <input type="email" name="email" placeholder="you@yourcompany.com" required aria-label="Email address">
-          <button type="submit" class="btn btn--primary">Join the Waitlist</button>
+          <div class="cta-form__row">
+            <input type="email" name="email" placeholder="you@yourcompany.com" required aria-label="Email address">
+            <button type="submit" class="btn btn--primary">Join the Waitlist</button>
+          </div>
+          <div class="cta-form__consent">
+            <label class="consent-label">
+              <input type="checkbox" name="consent" required aria-label="Consent to communications">
+              <span>I agree to receive communications from Indomit about the Design Partner Program and product updates. No third-party sharing. Unsubscribe anytime.</span>
+            </label>
+          </div>
         </form>
-        <p style="font-size: 0.8rem; color: var(--storm); margin-top: var(--space-xs);">
-          No spam. We'll reach out when your slot opens.
+        <p class="cta-form__privacy">
+          Your email is stored solely for waitlist communications and is never
+          shared with third parties, sold, or used for advertising. We retain
+          your information only for the duration of the waitlist program and
+          delete it upon request. For questions, contact
+          <a href="mailto:privacy@indomit.ai">privacy@indomit.ai</a>.
         </p>
       </div>
     </div>
@@ -473,6 +673,8 @@
             <li><a href="#features">Capabilities</a></li>
             <li><a href="#hardware">Hardware</a></li>
             <li><a href="#how-it-works">Deployment</a></li>
+            <li><a href="#pilot">Pilot Program</a></li>
+            <li><a href="#security">Security</a></li>
             <li><a href="#contact">Early Access</a></li>
           </ul>
         </div>
